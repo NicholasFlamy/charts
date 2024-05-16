@@ -46,6 +46,10 @@ immichNetwork:
   machinelearningPort: 32002
   microservicesPort: 32003
 
+immichRunAs:
+  user: 0
+  group: 0
+
 immichStorage:
   uploads:
     type: ixVolume
