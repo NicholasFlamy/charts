@@ -83,6 +83,10 @@
                     "description": "Configure Immich"
                 },
                 {
+                    "name": "User and Group Configuration",
+                    "description": "Configure User and Group for Immich"
+                },
+                {
                     "name": "Network Configuration",
                     "description": "Configure Network for Immich"
                 },
@@ -170,6 +174,38 @@
                                             "description": "Openvino Machine Learning Image"
                                         }
                                     ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "variable": "immichRunAs",
+                    "label": "",
+                    "group": "User and Group Configuration",
+                    "schema": {
+                        "type": "dict",
+                        "attrs": [
+                            {
+                                "variable": "user",
+                                "label": "User ID",
+                                "description": "The user id that Immich will run as.",
+                                "schema": {
+                                    "type": "int",
+                                    "min": 0,
+                                    "default": 0,
+                                    "required": true
+                                }
+                            },
+                            {
+                                "variable": "group",
+                                "label": "Group ID",
+                                "description": "The group id that Immich will run as.",
+                                "schema": {
+                                    "type": "int",
+                                    "min": 0,
+                                    "default": 0,
+                                    "required": true
                                 }
                             }
                         ]
