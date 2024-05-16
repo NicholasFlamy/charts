@@ -56,6 +56,30 @@ questions:
                 description: Cuda Machine Learning Image
               - value: mlOpenvinoImage
                 description: Openvino Machine Learning Image
+
+  - variable: immichRunAs
+    label: ""
+    group: User and Group Configuration
+    schema:
+      type: dict
+      attrs:
+        - variable: user
+          label: User ID
+          description: The user id that immich will run as.
+          schema:
+            type: int
+            min: 0
+            default: 0
+            required: true
+        - variable: group
+          label: Group ID
+          description: The group id that immich will run as.
+          schema:
+            type: int
+            min: 0
+            default: 0
+            required: true
+
   - variable: immichNetwork
     label: ""
     group: Network Configuration
