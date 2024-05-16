@@ -17,9 +17,8 @@ workload:
           primary: true
           imageSelector: {{ $img }}
           securityContext:
-            runAsUser: 0
-            runAsGroup: 0
-            runAsNonRoot: false
+            runAsUser: {{ .Values.immichRunAs.user }}
+            runAsGroup: {{ .Values.immichRunAs.group }}
             readOnlyRootFilesystem: false
           envFrom:
             - configMapRef:
