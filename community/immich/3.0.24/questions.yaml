@@ -1,6 +1,8 @@
 groups:
   - name: Immich Configuration
     description: Configure Immich
+  - name: User and Group Configuration
+    description: Configure User and Group for Immich
   - name: Network Configuration
     description: Configure Network for Immich
   - name: Storage Configuration
